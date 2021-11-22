@@ -1,5 +1,5 @@
 import React from 'react';
-import illustrationWorking from '../images/illustration-working.svg';
+import { Illustration } from '../imports';
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
         <button type="button">Get Started</button>  
       </div>
       <div className="url-shortening__hero-image">
-        <img src={ illustrationWorking } alt="Working Illustration" />
+        <img src={ Illustration } alt="Working Illustration" />
       </div>
     </div>
   );
