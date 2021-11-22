@@ -8,6 +8,7 @@
 
 html {
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 body {
@@ -91,6 +92,7 @@ a {
 .url-shortening__navbar .url-shortening__navbar-login button {
   color: #fff;
   font-weight: bold;
+  font-size: 1rem;
   border-radius: 25px;
   background: #2acfcf;
   border: none;
@@ -161,6 +163,7 @@ a {
 .url-shortening__navbar .url-shortening__navbar-menu .url-shortening__navbar-menu_container .url-shortening__navbar-menu_container-links .url-shortening__navbar-menu_container-links-login button {
   color: #fff;
   font-weight: bold;
+  font-size: 1rem;
   border-radius: 25px;
   background: #2acfcf;
   border: none;
@@ -191,5 +194,86 @@ a {
 @media screen and (max-width: 550px) {
   .url-shortening__navbar {
     padding: 2rem 1.333rem;
+  }
+}
+.url-shortening__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 9.2778rem;
+}
+.url-shortening__hero .url-shortening__hero-heading {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 50%;
+}
+.url-shortening__hero .url-shortening__hero-heading h1 {
+  font-size: 3.3889rem;
+  line-height: 3.8889rem;
+}
+.url-shortening__hero .url-shortening__hero-heading p {
+  font-size: 1rem;
+  color: #bfbfbf;
+}
+.url-shortening__hero .url-shortening__hero-heading button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #2acfcf;
+  border: none;
+  outline: none;
+  padding: 0.7778rem 1.3889rem;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+.url-shortening__hero .url-shortening__hero-heading button:hover {
+  opacity: 0.6;
+}
+.url-shortening__hero .url-shortening__hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.url-shortening__hero .url-shortening__hero-image img {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+}
+
+@media screen and (max-width: 1150px) {
+  .url-shortening__hero {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  .url-shortening__hero .url-shortening__hero-heading {
+    margin-top: 550px;
+    min-width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+  .url-shortening__hero .url-shortening__hero-image img {
+    position: absolute;
+    right: -200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .url-shortening__hero {
+    padding: 1rem;
+  }
+  .url-shortening__hero .url-shortening__hero-heading {
+    margin-top: 400px;
+  }
+  .url-shortening__hero .url-shortening__hero-heading h1 {
+    font-size: 2rem;
+    line-height: 2.7778rem;
+  }
+  .url-shortening__hero .url-shortening__hero-image img {
+    width: 500px;
+    right: -150px;
   }
 }/*# sourceMappingURL=main.css.map */

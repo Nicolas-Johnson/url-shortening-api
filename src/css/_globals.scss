@@ -8,6 +8,7 @@
 
 html {
   font-size: $font-size;
+  overflow-x: hidden;
 }
   
 body {
@@ -33,6 +34,7 @@ a {
 @mixin btn {
   color: #fff;
   font-weight: bold;
+  font-size: 1rem;
   border-radius: 25px;
   background: $cyan;
   border: none;
