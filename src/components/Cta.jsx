@@ -1,5 +1,4 @@
 import React from 'react';
-import {  BgBoostDesktop, BgBoostMobile, } from '../imports';
 
 const Cta = () => {
   return (

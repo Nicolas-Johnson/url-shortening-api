@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../images/logo.svg';
+import { Logo } from '../imports';
 import { RiMenuFill, RiCloseFill  } from "react-icons/ri";
 
 const LinksList = () => (
@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className="url-shortening__navbar">
       <div className="url-shortening__navbar-logo">
-        <img src={ logo } alt="Logo" />   
+        <img src={ Logo } alt="Logo" />   
       </div>
       <div className="url-shortening__navbar-links">
         <LinksList />

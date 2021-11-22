@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cta } from './components';
-import { Header, Statistics } from './containers';
+import { Header, Statistics, Footer } from './containers';
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Header />
       <Statistics />
       <Cta />
+      <Footer />
     </div>
   );
 }
