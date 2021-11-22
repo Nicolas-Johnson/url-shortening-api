@@ -1,0 +1,40 @@
+.url-shortening__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background: url('../images/bg-boost-desktop.svg') no-repeat $dark-violet;
+  background-size: 100% 250px;
+
+  h2 {
+    font-size: 2rem;
+    color: #fff;
+
+    margin-bottom: 10px;
+  }
+
+  button {
+    @include btn;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .url-shortening__cta {
+    background: url('../images/bg-boost-mobile.svg') no-repeat $dark-violet;
+    background-size: 100% 250px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .url-shortening__cta {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
