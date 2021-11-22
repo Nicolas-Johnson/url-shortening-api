@@ -370,7 +370,7 @@ a {
   color: #bfbfbf;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1430px) {
   .url-shortening__statistics .url-shortening__statistics-cards {
     flex-direction: column;
   }
@@ -402,5 +402,49 @@ a {
   .url-shortening__statistics .url-shortening__statistics-headings p {
     font-size: 1rem;
     margin-bottom: 3rem;
+  }
+}
+.url-shortening__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background: url("../images/bg-boost-desktop.svg") no-repeat #3b3054;
+  background-size: 100% 250px;
+}
+.url-shortening__cta h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.url-shortening__cta button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #2acfcf;
+  border: none;
+  outline: none;
+  padding: 0.7778rem 1.3889rem;
+  cursor: pointer;
+}
+.url-shortening__cta button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 950px) {
+  .url-shortening__cta {
+    background: url("../images/bg-boost-mobile.svg") no-repeat #3b3054;
+    background-size: 100% 250px;
+  }
+  .url-shortening__cta h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .url-shortening__cta h2 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

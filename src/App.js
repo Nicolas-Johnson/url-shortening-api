@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from './containers/Header';
-import Statistics from './containers/Statistics';
+import { Cta } from './components';
+import { Header, Statistics } from './containers';
 
 const App = () => {
   return (
     <div>
       <Header />
       <Statistics />
+      <Cta />
     </div>
   );
 }
