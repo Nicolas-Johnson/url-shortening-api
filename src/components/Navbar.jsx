@@ -19,6 +19,7 @@ const Login = () => (
 
 const Navbar = () => {
   const [menuTog, setTog] = useState(false);
+  
   return (
     <div className="url-shortening__navbar">
       <div className="url-shortening__navbar-logo">
@@ -34,9 +35,11 @@ const Navbar = () => {
         {!menuTog && <RiMenuFill size={27} onClick={ () => setTog(true)} />}
         {menuTog && <RiCloseFill size={27} onClick={ () => setTog(false)} />}
         {menuTog && (
-          <div className="url-shortening__navbar-menu_container">
+          <div className="url-shortening__navbar-menu_container scale-up-ver-top">
             <div className="url-shortening__navbar-menu_container-links">
-              <LinksList />
+              <div className="url-shortening__navbar-menu_container-links-list">
+                <LinksList />
+              </div>
               <div className="url-shortening__navbar-menu_container-links-login">
                 <Login />
               </div>

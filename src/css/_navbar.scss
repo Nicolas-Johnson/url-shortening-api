@@ -1,0 +1,129 @@
+.url-shortening__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 9.2778rem;
+  
+  .url-shortening__navbar-logo {
+    flex: 0.5;
+    margin-right: 15px;
+
+    img {
+      width: 120px;
+      height: 34px;
+    }
+  }
+
+  .url-shortening__navbar-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      font-size: 1rem;
+      @include links;
+    }
+  }
+
+  .url-shortening__navbar-login {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      font-size: 1rem;
+      @include links;
+    }
+
+    button {
+      @include btn;
+      font-size: 1rem;
+    }
+  }
+
+  .url-shortening__navbar-menu {
+    display: none;
+
+    .url-shortening__navbar-menu_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      position: absolute;
+      top: 100px;
+      right: 10%;
+
+      width: 80%;
+      background: $dark-violet;
+      border-radius: 10px;
+
+      .url-shortening__navbar-menu_container-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .url-shortening__navbar-menu_container-links-list{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 80%;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid $grayish-violet;
+          
+          a {
+            font-size: 1rem;
+            @include links;
+            margin: 2.5rem 0 0 0;
+          }
+        }
+
+        .url-shortening__navbar-menu_container-links-login {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 2rem;
+
+          a {
+            font-size: 1rem;
+            @include links;
+            margin: 2rem 0;
+          }
+
+          button {
+            @include btn;
+            padding: 0.7778rem 5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .url-shortening__navbar {
+    padding: 2rem 4rem;
+    .url-shortening__navbar-menu {
+      display: flex;
+    }
+
+    .url-shortening__navbar-links {
+      display: none;
+    }
+
+    .url-shortening__navbar-login {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .url-shortening__navbar {
+    padding: 2rem 1.333rem;
+  }
+}
