@@ -23,6 +23,11 @@ a {
   color: unset;
 }
 
+.slide-in-blurred-top {
+  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
 .scale-up-ver-top {
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -46,6 +51,34 @@ a {
   100% {
     transform: scaleY(1);
     transform-origin: 100% 0%;
+  }
+}
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
   }
 }
 .url-shortening__navbar {
@@ -520,4 +553,144 @@ a {
   .url-shortening__footer .url-shortening__footer-copyright {
     font-size: 0.6rem;
   }
+}
+.url-shortening__shorten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.url-shortening__shorten .url-shortening__shorten-container {
+  position: absolute;
+  top: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg-boost-desktop.svg") no-repeat #3b3054;
+  background-size: 100%;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+}
+.url-shortening__shorten .url-shortening__shorten-container label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+}
+.url-shortening__shorten .url-shortening__shorten-container label p {
+  margin-top: 5px;
+}
+.url-shortening__shorten .url-shortening__shorten-container label input {
+  padding: 15px;
+  margin: 25px 15px 0 0;
+  border-radius: 10px;
+}
+.url-shortening__shorten .url-shortening__shorten-container button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #2acfcf;
+  border: none;
+  outline: none;
+  padding: 0.7778rem 1.3889rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.url-shortening__shorten .url-shortening__shorten-container button:hover {
+  opacity: 0.6;
+}
+.url-shortening__shorten .url-shortening__shorten-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link h2 {
+  flex: 2;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link .short {
+  flex: 1;
+  color: #2acfcf;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button {
+  flex: 0.5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #2acfcf;
+  border: none;
+  outline: none;
+  padding: 0.7778rem 1.3889rem;
+  cursor: pointer;
+  border-radius: 10px;
+  max-width: 100px;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button:hover {
+  opacity: 0.6;
+}
+.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button:active {
+  background: #3b3054;
+}
+
+@media screen and (max-width: 890px) {
+  .url-shortening__shorten .url-shortening__shorten-container {
+    background: url("../images/bg-boost-mobile.svg") no-repeat #3b3054;
+    background-size: 100%;
+    height: 200px;
+    flex-direction: column;
+  }
+  .url-shortening__shorten .url-shortening__shorten-container label {
+    min-width: 80%;
+  }
+  .url-shortening__shorten .url-shortening__shorten-container label input {
+    margin: 0;
+  }
+  .url-shortening__shorten .url-shortening__shorten-container button {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .url-shortening__shorten .url-shortening__shorten-links {
+    margin-top: 110px;
+  }
+  .url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link {
+    flex-direction: column;
+  }
+  .url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link h2 {
+    margin-top: 10px;
+    font-size: 0.6rem;
+  }
+  .url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button {
+    flex: 1;
+    min-width: 90%;
+    margin-top: 10px;
+  }
+}
+.addLink label p {
+  color: #f46262;
+  opacity: 1;
+}
+.addLink label input {
+  outline: #f46262 solid 3px;
+  color: #f46262;
 }/*# sourceMappingURL=main.css.map */
