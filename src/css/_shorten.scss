@@ -1,0 +1,148 @@
+.url-shortening__shorten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  .url-shortening__shorten-container {
+    position: absolute;
+    top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bg-boost-desktop.svg') no-repeat $dark-violet;
+    background-size: 100%;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+
+    label {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 70%;
+      p {
+        margin-top: 5px;
+      }
+      input {
+        padding: 15px;
+        margin: 25px 15px 0 0;
+        border-radius: 10px;
+      }
+
+    }
+
+    button {
+      @include btn;
+      border-radius: 10px;
+    }
+  }
+
+  .url-shortening__shorten-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+
+    .url-shortening__shorten-links-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background: #fff;
+      padding: 2rem;
+      margin-top: 15px;
+      border-radius: 10px;
+
+      h2 {
+        flex: 2;
+        font-size: .8rem;
+        flex-wrap: wrap;
+      }
+
+      .short {
+        flex: 1;
+        color: $cyan;
+      }
+
+      button {
+        flex: .5;
+        @include btn;
+        border-radius: 10px;
+        max-width: 100px;
+
+        &:active {
+          background: $dark-violet;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 890px) {
+  .url-shortening__shorten {
+    .url-shortening__shorten-container {
+      background: url('../images/bg-boost-mobile.svg') no-repeat $dark-violet;
+      background-size: 100%;
+      height: 200px;
+      flex-direction: column;
+
+      label {
+        min-width: 80%;
+
+        input {
+          margin: 0;
+        }
+      }
+
+      button {
+        margin-bottom: 20px; 
+        width: 80%;
+      }
+    }
+
+    .url-shortening__shorten-links {
+      margin-top: 110px;
+
+      .url-shortening__shorten-links-link {
+        flex-direction: column;
+
+        h2 {
+          margin-top: 10px;
+          font-size: .6rem;
+        }
+
+        button {
+          flex: 1;
+          min-width: 90%;
+          margin-top: 10px;
+        }
+      }
+
+    }
+  }
+}
+
+
+.addLink {
+  label {
+    p {
+      color: $red;
+      opacity: 1;
+    }
+
+    input {
+      outline: $red solid 3px;
+      color: $red;
+    }
+  }
+}

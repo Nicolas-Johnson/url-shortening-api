@@ -1,5 +1,5 @@
 import React from 'react';
-import CardResource from '../components/CardResource';
+import { CardResource, Shorten } from '../components';
 import {
   IconBrandRecognition,
   IconDetailedRecords,
@@ -27,6 +27,7 @@ const cardsData = [
 const Statistics = () => {
   return (
     <div className="url-shortening__statistics">
+      <Shorten />
       <div className="url-shortening__statistics-headings">
         <h2>Advanced Statistics</h2>
         <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
