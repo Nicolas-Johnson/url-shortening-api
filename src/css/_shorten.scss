@@ -76,10 +76,6 @@
         @include btn;
         border-radius: 10px;
         max-width: 100px;
-
-        &:active {
-          background: $dark-violet;
-        }
       }
 
     }
@@ -130,6 +126,10 @@
 
     }
   }
+}
+
+.copyLink {
+  background-color: $dark-violet;
 }
 
 

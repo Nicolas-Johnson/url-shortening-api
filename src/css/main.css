@@ -649,9 +649,6 @@ a {
 .url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button:hover {
   opacity: 0.6;
 }
-.url-shortening__shorten .url-shortening__shorten-links .url-shortening__shorten-links-link button:active {
-  background: #3b3054;
-}
 
 @media screen and (max-width: 890px) {
   .url-shortening__shorten .url-shortening__shorten-container {
@@ -686,6 +683,10 @@ a {
     margin-top: 10px;
   }
 }
+.copyLink {
+  background-color: #3b3054;
+}
+
 .addLink label p {
   color: #f46262;
   opacity: 1;
