@@ -24,7 +24,7 @@ The users should be able to:
 
 Nicolas Johns - [Linkedin](https://www.linkedin.com/in/nicolas-js/) - nicolas-sousa2011@hotmail.com
 
-Project Link: [repo-link](https://cryptouniverse.herokuapp.com/)
+Project: [link](https://urlshortapia.herokuapp.com/)
 
 ## Acknowledgments
 * [shrtcode API](https://app.shrtco.de/)
